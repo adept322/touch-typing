@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    /* Градиентный фон */
+    background: linear-gradient(#78dbe2, #d0f4f7) fixed;
+    
+    /* Шрифт */
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    padding: 18em 0;
+    text-align: center;
+}
+
+span {
+    color: #206676;
+    font-size: 3.5em;
+}
+
+label {
+    margin-top: 10px;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}
+input {
+    font-size: 3em;
+    background: #c1eff2;
+    
+    /* Цвет и толщина границы */
+    border: 3px solid #206676;
+    border-radius: 7px;
+    
+    color: #206676;
+    caret-color: #206676;
+    
+    /* Шрифт внутри поля ввода */
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}

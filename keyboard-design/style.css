@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    /* Градиентный фон */
+    background: linear-gradient(#78dbe2, #d0f4f7) fixed;
+    
+    /* Шрифт */
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.keyboardContainer {
+    text-align: center;
+}
+
+.keyboard {
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    
+    border: 1px solid slategray;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    width: 830px;
+}
+
+.line:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.key {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid slategray;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 4px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.backspace {
+    width: 86px;
+}
+
+.tab {
+    width: 60px;
+}
+
+.slash {
+    width: 66px;
+}
+
+.capslock {
+    width: 80px;
+}
+
+.enter {
+    width: 102px;
+}
+
+.leftShift {
+    width: 100px;
+}
+
+.rightShift {
+    width: 138px;
+}
+
+.leftControl {
+    width: 70px;
+}
+
+.cmd {
+    width: 45px;
+}
+
+.space {
+    width: 310px;
+}
+
+.leftAlt {
+    width: 45px;
+}
+
+.rightAlt {
+    width: 45px;
+}
+.menu {
+    width: 50px;
+}
+
+.rightControl {
+    width: 92px;
+}
+
+.active {
+    background-color: red;
+}
