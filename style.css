@@ -1,14 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 body {
-    /* Градиентный фон */
-    background: linear-gradient(#78dbe2, #d0f4f7) fixed;
-    
-    /* Шрифт */
+    background: #474a51;
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
+}
+
+.touch__typing {
+    display: flex;
+    flex-direction: column;
+    padding: 6em 0 0 0;
+    text-align: center;
+}
+
+span {
+    color:white;
+    font-size: 3.5em;
+}
+
+label {
+    margin-top: 10px;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}
+input {
+    font-size: 3em;
+    background:white;
+    
+    /* Цвет и толщина границы */
+    border: 3px solid #206676;
+    border-radius: 7px;
+    
+    color: #206676;
+    caret-color: #206676;
+    
+    /* Шрифт внутри поля ввода */
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    width: 830px;
 }
 
 .keyboardContainer {
@@ -20,13 +53,18 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	margin: auto;
+	margin: 20px auto auto auto;
+    
     
     border: 1px solid slategray;
     padding: 5px;
     border-radius: 4px;
     position: relative;
     width: 830px;
+}
+
+.keyboardContainer h1 {
+    color: white;
 }
 
 .line:after {
@@ -102,6 +140,11 @@ body {
     width: 92px;
 }
 
-.active {
-    background-color: red;
+.line .key {
+    transition: all .2s;
 }
+
+.active {
+    background-color: white;
+}
+
